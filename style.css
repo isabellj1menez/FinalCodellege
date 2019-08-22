@@ -49,6 +49,7 @@ ul {
 ul li {
     list-style-type: none;
     margin: 0 30px;
+    cursor: pointer;
 }
 
 ul li a {
@@ -59,5 +60,31 @@ ul li a {
     color: #000;
     text-transform: uppercase;
     font-family: sans-serif;
-    cursor: pointer;
+}
+
+.sec2 {
+    width: 100%;
+    height: 100vh;
+    top: 100%;
+    position: absolute;
+}
+
+.sec2 h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(51, 137, 218);
+    text-align: center;
+    font-size: 50px;
+}
+
+.sec2 p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.imgnosotros {
+    width: 60%;
+    height: 30vh;
+    position: absolute;
+    left: 20%;
 }
