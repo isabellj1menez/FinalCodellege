@@ -1,49 +1,105 @@
-body {
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background: #f4f4f4;
 }
 
 section {
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-h1 {
-    width: 50%;
-    font-size: 50px;
+section h1 {
+    width: 100%;
+    height: 20%;
     text-align: center;
 }
 
-.container {
-    width: 100%;
-    height: 75%;
+.equipo {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background: darkcyan;
+    align-items: center;
 }
 
-.container>div {
+.slider {
     width: 80%;
-    height: 30%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.slider .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.slider .container>div {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-img {
-    width: 20px;
-}
-
-.colaborador {
+.slider .colaborador {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.colaborador img {
+    width: 38px;
+    height: 38px;
+}
+
+.colaborador-datos {
+    width: 70%;
+    margin: 0 0 0 5%;
+}
+
+.colaboradorC {
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(87, 82, 82);
+}
+
+.colaboradorN {
+    font-size: 18px;
+    font-weight: 100;
+    color: black;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0%;
+    }
+    20% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
 }
