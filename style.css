@@ -1,11 +1,19 @@
-* {
-    margin: 0%;
-    padding: 0%;
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     width: 100%;
     height: auto;
     background: #f4f4f4;
+    font-family: 'Montserrat', sans-serif;
 }
+
+
+/* 
+html {
+    scroll-behavior: smooth;
+} */
 
 section {
     width: 100%;
@@ -16,6 +24,87 @@ section h1 {
     width: 100%;
     height: 20%;
     text-align: center;
+    color: rgb(51, 137, 218);
+    font-size: 50px;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.hdrimg {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    display: flex;
+    background: transparent;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.code {
+    position: absolute;
+    left: 5%;
+    width: 10%;
+    height: 5vh;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    font-size: 18px;
+    color: #000;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.sec2 {
+    width: 100%;
+    height: 100vh;
+    /* top: 100%;
+    position: absolute; */
+}
+
+.sec2 h1 {
+    /* font-family: 'Montserrat', sans-serif; */
+    color: rgb(51, 137, 218);
+    text-align: center;
+    font-size: 50px;
+}
+
+.sec2 p {
+    /* font-family: 'Montserrat', sans-serif; */
+    text-align: center;
+    font-size: 30px;
+}
+
+.imgnosotros {
+    width: 60%;
+    height: 30vh;
+    position: absolute;
+    left: 20%;
 }
 
 .equipo {
@@ -25,18 +114,36 @@ section h1 {
     align-items: center;
 }
 
+.equipo h1 {
+    height: 20%;
+}
+
 .slider {
     width: 80%;
     height: 60%;
     overflow: hidden;
 }
 
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s ease-in-out infinite;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+    height: 100vh;
+}
+
 .slider .container {
     width: 100%;
-    height: 100%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    /* border: 2px solid black; */
 }
 
 .slider .container>div {
@@ -58,6 +165,11 @@ section h1 {
 .colaborador img {
     width: 38px;
     height: 38px;
+}
+
+.colaborador1 img {
+    width: 50%;
+    height: 80%;
 }
 
 .colaborador-datos {
