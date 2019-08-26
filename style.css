@@ -7,17 +7,19 @@ body {
     height: auto;
     background: #f4f4f4;
     font-family: 'Montserrat', sans-serif;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; */
 }
 
-
-/* 
 html {
     scroll-behavior: smooth;
-} */
+}
 
 section {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 section h1 {
@@ -26,6 +28,8 @@ section h1 {
     text-align: center;
     color: rgb(51, 137, 218);
     font-size: 50px;
+    margin: 0%;
+    padding: 0%;
 }
 
 .header {
@@ -107,43 +111,49 @@ section h1 {
     left: 20%;
 }
 
-.equipo {
+.equipo,
+.testimonios {
+    width: 100%;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-.equipo h1 {
-    height: 20%;
+.equipo h1,
+.testimonios h1 {
+    margin: 0;
+    padding: 0;
 }
 
 .slider {
-    width: 80%;
-    height: 60%;
+    width: 60%;
     overflow: hidden;
 }
 
 .slider ul {
+    margin: 0;
+    padding: 0;
     display: flex;
     padding: 0;
     width: 400%;
+    height: 100%;
     animation: cambio 20s ease-in-out infinite;
 }
 
 .slider li {
     width: 100%;
     list-style: none;
-    height: 100vh;
+    height: 100%;
 }
 
 .slider .container {
     width: 100%;
-    height: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* border: 2px solid black; */
 }
 
 .slider .container>div {
@@ -214,4 +224,141 @@ section h1 {
     100% {
         margin-left: -300%;
     }
+}
+
+.testimonios {
+    margin: 5% 0;
+}
+
+.testimonio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonio div {
+    width: 80%;
+    text-align: center;
+}
+
+.testimonio div p {
+    text-align: justify;
+}
+
+.testimonio div .nombre {
+    text-align: center;
+    font-size: 20px;
+}
+
+.colabora {
+    height: 80vh;
+}
+
+.colabora>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    width: 75%;
+    margin: auto;
+}
+
+.inclusion {
+    text-align: center;
+    position: relative;
+    width: 20%;
+    height: 40vh;
+    background: #0264FB;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    top: 50px;
+}
+
+.inclusion-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    margin: 10%;
+}
+
+.inclusion-text span {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+hr {
+    color: white;
+    width: 100%;
+}
+
+.inclusion-img {
+    position: absolute;
+    margin-top: -5vh;
+}
+
+.inclusion img {
+    width: 80px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.dudas {
+    width: 100%;
+    height: 100vh;
+    background: url('./Imagenes/IMG-gris.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dudas>div {
+    width: 50%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dudas>div div {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pregunta {
+    font-size: 25px;
+}
+
+.correo {
+    max-width: 100%;
+    height: 30%;
+    font-size: 35px;
+    background: burlywood;
+    color: rgb(51, 137, 218);
+    border-radius: 75px 0 75px 0;
+    font-weight: bolder;
+}
+
+.dudas footer {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dudas footer .fab {
+    color: white;
+    font-size: 35px;
 }

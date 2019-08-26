@@ -1,0 +1,100 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ubicacion h1 {
+    width: 100%;
+    text-align: center;
+    color: rgb(51, 137, 218);
+    font-size: 25px;
+}
+
+.ubicacion {
+    width: 100%;
+    height: 150vh;
+    background: thistle;
+}
+
+.estamos {
+    width: 90%;
+    height: 150vh;
+    margin: auto;
+}
+
+.ubicacion>div div {
+    width: 45%;
+    height: 45%;
+    display: inline-block;
+    margin: 2%;
+}
+
+.ubicacion>div div p {
+    height: 15%;
+}
+
+.ubicacion>div div p span {
+    font-weight: bolder;
+}
+
+iframe {
+    width: 100%;
+    height: 80%;
+}
+
+.dudas {
+    width: 100%;
+    height: 100vh;
+    background: url('./Imagenes/IMG-gris.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dudas>div {
+    width: 50%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dudas>div div {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pregunta {
+    font-size: 25px;
+}
+
+.correo {
+    max-width: 100%;
+    height: 30%;
+    font-size: 25px;
+    background: burlywood;
+    color: rgb(51, 137, 218);
+    border-radius: 75px 0 75px 0;
+    font-weight: bolder;
+}
+
+.dudas footer {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dudas footer .fab {
+    color: white;
+    font-size: 35px;
+}
