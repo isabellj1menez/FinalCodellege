@@ -1,8 +1,309 @@
-* {
-    margin: 0%;
-    padding: 0%;
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    background: #f4f4f4;
     font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.hdrimg {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    display: flex;
+    background: transparent;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.programa {
+    width: 20%;
+    height: 20vh;
+    top: 60%;
+    left: 5%;
+    margin: 0;
+    position: absolute;
+    background: #fff;
+}
+
+
+/* p {
+    color: blue;
+    text-align: center;
+    font-size: 70px;
+    margin: 0;
+}
+
+h1 {
+    color: blue;
+    text-align: left;
+    font-size: 100px;
+    margin: 0;
+} */
+
+.code {
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    width: 10%;
+    height: 5vh;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    margin: 0 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.borde {
+    width: ;
+    background: rgb(49, 230, 17);
+    margin: 0px;
+    padding: 15px 32px;
+    border-radius: 60% 0 60% 0;
+}
+
+.proceso {
+    width: 100%;
+    height: auto;
+    left: 10%;
+}
+
+.proceso h2 {
+    height: 15%;
+    color: rgb(28, 48, 224);
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+
+.proceso p {
+    text-align: left;
+    font-size: 20px;
+    margin: 0;
+    color: rgb(54, 54, 54);
+    margin-left: 5%;
+}
+
+.texto {
+    display: flex;
+    text-align: justify;
+    color: rgb(54, 54, 54);
+    padding: 0;
+    font-size: 20px;
+    margin-left: 10%;
+}
+
+.texto1 {
+    width: 40%;
+    padding: 15px;
+    display: inline-block;
+}
+
+.texto2 {
+    width: 40%;
+    padding: 15px;
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.sec2 {
+    width: 100%;
+    height: auto;
+    left: 10%;
+}
+
+.sec2 h2 {
+    height: 15%;
+    color: rgb(28, 48, 224);
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+
+.sec2 p {
+    text-align: left;
+    font-size: 20px;
+    margin: 0;
+    color: black;
+    margin-left: 5%;
+}
+
+.objetivo {
+    width: 40%;
+    height: auto;
+    margin-left: 5%;
+    background: transparent;
+}
+
+.objetivo h3 {
+    color: rgb(28, 48, 224);
+    font-size: 30px;
+    margin: 0;
+}
+
+.objetivo p {
+    color: #000;
+    font-size: 30px;
+    margin-left: 0;
+    font-size: 20px;
+}
+
+.aplica {
+    width: 40%;
+    height: auto;
+    margin-left: 5%;
+}
+
+.aplica h4 {
+    color: rgb(28, 48, 224);
+    font-size: 30px;
+    margin: 0;
+}
+
+#ap {
+    width: 40%;
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+.horarios {
+    width: 40%;
+    height: auto;
+    margin-left: 5%;
+}
+
+.horarios h2 {
+    color: rgb(28, 48, 224);
+    font-size: 30px;
+    text-align: left;
+}
+
+.horarios p {
+    color: #000;
+    font-size: 30px;
+    margin-left: 0;
+    font-size: 20px;
+}
+
+.circulos {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    left: 60%;
+    float: left;
+    display: block;
+    top: 120%;
+}
+
+.circulos h2 {
+    width: 40%;
+    height: auto;
+    color: rgb(28, 48, 224);
+    font-size: 30px;
+}
+
+.uno {
+    width: 12vw;
+    height: 25vh;
+    border-radius: 50%;
+    background: rgb(28, 48, 224);
+    margin: 0;
+}
+
+.circulos .uno #calendarioIcono,
+.circulos .dos #ubicacionIcono,
+.circulos .tres #cronometroIcono {
+    text-align: center;
+    top: 10%;
+    color: #fff;
+    font-size: 30px;
+}
+
+.uno h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    margin: 0;
+}
+
+.uno p {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.dos {
+    position: absolute;
+    width: 15vw;
+    height: 30vh;
+    top: 20%;
+    left: 50%;
+    border-radius: 50%;
+    background: rgb(28, 48, 224);
+    margin: 0;
+}
+
+.dos p {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.tres {
+    position: absolute;
+    width: 12vw;
+    height: 25vh;
+    left: 25%;
+    border-radius: 50%;
+    background: rgb(28, 48, 224);
+    margin: 0;
+}
+
+.tres h4 {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    margin: 0;
+}
+
+.tres p {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
 }
 
 .ubicacion h1 {
@@ -15,7 +316,6 @@
 .ubicacion {
     width: 100%;
     height: 150vh;
-    background: thistle;
 }
 
 .estamos {
