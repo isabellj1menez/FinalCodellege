@@ -39,23 +39,22 @@ body {
     left: 5%;
     margin: 0;
     position: absolute;
-    background: #fff;
+    background: transparent;
 }
 
-
-/* p {
-    color: blue;
+.programa p {
+    color: rgb(51, 137, 218);
     text-align: center;
     font-size: 70px;
     margin: 0;
 }
 
-h1 {
-    color: blue;
+.programa h1 {
+    color: rgb(51, 137, 218);
     text-align: left;
     font-size: 100px;
     margin: 0;
-} */
+}
 
 .code {
     position: absolute;
@@ -89,8 +88,8 @@ h1 {
 }
 
 .borde {
-    width: ;
-    background: rgb(49, 230, 17);
+    /* width: ; */
+    background: rgb(51, 137, 218);
     margin: 0px;
     padding: 15px 32px;
     border-radius: 60% 0 60% 0;
@@ -104,9 +103,9 @@ h1 {
 
 .proceso h2 {
     height: 15%;
-    color: rgb(28, 48, 224);
+    color: rgb(51, 137, 218);
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     margin: 0;
 }
 
@@ -141,20 +140,24 @@ h1 {
 }
 
 .sec2 {
-    width: 100%;
+    width: 90%;
+    margin: auto;
     height: auto;
-    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-around;
 }
 
-.sec2 h2 {
+.sec2 .start h2 {
     height: 15%;
-    color: rgb(28, 48, 224);
+    color: rgb(51, 137, 218);
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     margin: 0;
 }
 
-.sec2 p {
+.sec2 .strart p {
     text-align: left;
     font-size: 20px;
     margin: 0;
@@ -162,148 +165,101 @@ h1 {
     margin-left: 5%;
 }
 
-.objetivo {
-    width: 40%;
-    height: auto;
-    margin-left: 5%;
-    background: transparent;
+.sec2 .informacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-around;
 }
 
-.objetivo h3 {
-    color: rgb(28, 48, 224);
-    font-size: 30px;
+.sec2 .informacion div {
+    width: 50%;
     margin: 0;
 }
 
-.objetivo p {
+.sec2 .informacion .infocuadro1 {
+    margin: 0;
+}
+
+.sec2 .informacion .infocuadro1 div,
+.sec2 .informacion .infocuadro2 div {
+    width: 90%;
+    margin: 0%;
+}
+
+.objetivo h3,
+.aplica h3,
+.horarios h3,
+.infocuadro2 h3 {
+    color: rgb(51, 137, 218);
+    font-size: 22px;
+    margin: 0;
+}
+
+.objetivo p,
+.horarios p {
     color: #000;
-    font-size: 30px;
-    margin-left: 0;
-    font-size: 20px;
-}
-
-.aplica {
-    width: 40%;
-    height: auto;
-    margin-left: 5%;
-}
-
-.aplica h4 {
-    color: rgb(28, 48, 224);
-    font-size: 30px;
-    margin: 0;
+    font-size: 18px;
 }
 
 #ap {
-    width: 40%;
-    margin-left: 5%;
-    font-size: 20px;
-}
-
-.horarios {
-    width: 40%;
-    height: auto;
-    margin-left: 5%;
-}
-
-.horarios h2 {
-    color: rgb(28, 48, 224);
-    font-size: 30px;
-    text-align: left;
-}
-
-.horarios p {
-    color: #000;
-    font-size: 30px;
-    margin-left: 0;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .circulos {
-    position: absolute;
-    width: 40%;
-    height: auto;
-    left: 60%;
-    float: left;
-    display: block;
-    top: 120%;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.circulos h2 {
-    width: 40%;
-    height: auto;
-    color: rgb(28, 48, 224);
-    font-size: 30px;
-}
-
-.uno {
-    width: 12vw;
+.circulos .uno,
+.circulos .dos,
+.circulos .tres {
+    width: 15vw !important;
     height: 25vh;
     border-radius: 50%;
-    background: rgb(28, 48, 224);
-    margin: 0;
+    background: rgb(51, 137, 218);
+    text-align: center;
+    color: #fff;
+    position: absolute;
 }
 
 .circulos .uno #calendarioIcono,
 .circulos .dos #ubicacionIcono,
 .circulos .tres #cronometroIcono {
-    text-align: center;
-    top: 10%;
-    color: #fff;
-    font-size: 30px;
+    margin-top: 10%;
+    font-size: 25px;
 }
 
-.uno h3 {
-    text-align: center;
-    color: #fff;
-    font-size: 60px;
-    margin: 0;
+.uno h4,
+.tres h4 {
+    font-size: 55px;
+    margin: 0%;
 }
 
-.uno p {
-    text-align: center;
-    color: #fff;
-    font-size: 20px;
-}
-
-.dos {
-    position: absolute;
-    width: 15vw;
-    height: 30vh;
-    top: 20%;
-    left: 50%;
-    border-radius: 50%;
-    background: rgb(28, 48, 224);
-    margin: 0;
+.uno p,
+.tres p {
+    font-size: 15px;
+    margin: 0%;
 }
 
 .dos p {
-    text-align: center;
-    color: #fff;
-    font-size: 30px;
+    font-size: 20px;
+    margin: 2%;
+}
+
+.dos {
+    top: 20%;
+    left: 60%;
+    background: rgb(51, 137, 218);
+    margin: 0;
 }
 
 .tres {
-    position: absolute;
-    width: 12vw;
-    height: 25vh;
+    top: 50%;
     left: 25%;
-    border-radius: 50%;
-    background: rgb(28, 48, 224);
+    background: rgb(51, 137, 218);
     margin: 0;
-}
-
-.tres h4 {
-    text-align: center;
-    color: #fff;
-    font-size: 30px;
-    margin: 0;
-}
-
-.tres p {
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
 }
 
 .temas {
@@ -316,9 +272,9 @@ h1 {
     align-items: space-around;
 }
 
-.temas h2 {
-    color: rgb(28, 48, 224);
-    font-size: 30px;
+.temas h3 {
+    color: rgb(51, 137, 218);
+    font-size: 25px;
 }
 
 .slider {
@@ -373,11 +329,11 @@ h1 {
     }
 }
 
-.ubicacion h1 {
+.ubicacion h2 {
     width: 100%;
     text-align: center;
     color: rgb(51, 137, 218);
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .ubicacion {
