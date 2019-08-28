@@ -1,618 +1,734 @@
-    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-    body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        width: 100%;
-        height: auto;
-        background: #f4f4f4;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    .header {
-        width: 100%;
-        height: 100vh;
-        position: relative;
-    }
-    
-    .hdrimg {
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        background-repeat: no-repeat;
-    }
-    
-    .navbar {
-        width: 100%;
-        height: 20vh;
-        position: relative;
-        display: flex;
-        background: transparent;
-        align-items: center;
-        justify-content: flex-end;
-    }
-    
-    .code {
-        position: absolute;
-        top: 25%;
-        left: 2%;
-        width: 10%;
-        height: 5vh;
-    }
-    
-    .programa {
-        width: 20%;
-        height: 20vh;
-        top: 60%;
-        left: 5%;
-        margin: 0;
-        position: absolute;
-        background: transparent;
-    }
-    /*     
-    p {
-        color: #000;
-        text-align: left;
-        font-size: 70px;
-        margin: 0;
-    } */
-    
-    h1 {
-        color: #000;
-        text-align: center;
-        font-size: 100px;
-        margin: 0;
-    }
-    
-    .navbar ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-    }
-    
-    .navbar ul li {
-        list-style-type: none;
-        margin: 0 30px;
-        cursor: pointer;
-        color: #fff;
-    }
-    
-    .navbar ul li a {
-        text-decoration: none;
-        position: relative;
-        display: block;
-        font-size: 18px;
-        color: #fff;
-        text-transform: uppercase;
-        font-family: sans-serif;
-    }
-    
-    .borde {
-        /* width: ; */
-        background: rgb(49, 230, 17);
-        margin: 0px;
-        padding: 15px 32px;
-        border-radius: 60% 0 60% 0;
-    }
-    
-    .sec2 {
-        width: 100%;
-        height: 100vh;
-    }
-    
-    .sec2 h1 {
-        height: 15%;
-        color: rgb(51, 137, 218);
-        text-align: center;
-        font-size: 50px;
-        margin: 0;
-    }
-    
-    .sec2 p {
-        text-align: center;
-        font-size: 30px;
-        margin: 0;
-    }
-    
-    .imgnosotros {
-        width: 60%;
-        height: 30vh;
-        position: absolute;
-        left: 20%;
-    }
-    
-    .puntos1 {
-        width: 5vw;
-        height: 22vh;
-        top: 25%;
-        left: 40%;
-        position: relative;
-        border-right: 5px dashed rgb(0, 47, 255);
-        border-bottom: 5px dashed rgb(0, 47, 255);
-    }
-    
-    .puntos2 {
-        width: 5vw;
-        height: 22vh;
-        top: 2%;
-        left: 60%;
-        position: relative;
-        border-left: 5px dashed rgb(0, 47, 255);
-        border-bottom: 5px dashed rgb(0, 47, 255);
-    }
-    
-    .mas {
-        width: 70px;
-        height: 70px;
-        top: 75%;
-        right: 100%;
-        position: relative;
-        color: #fff;
-        border-radius: 50%;
-        background: rgb(0, 47, 255);
-        text-align: center;
-        font-size: 60px;
-    }
-    
-    .mas2 {
-        width: 70px;
-        height: 70px;
-        top: 75%;
-        left: 100%;
-        position: relative;
-        color: #fff;
-        border-radius: 50%;
-        background: rgb(0, 47, 255);
-        text-align: center;
-        font-size: 60px;
-    }
-    
-    .proposito li {
-        margin-bottom: 40px;
-        list-style: none;
-    }
-    
-    .proposito input[type=checkbox] {
-        position: absolute;
-        opacity: 1;
-    }
-    
-    .proposito label {
-        position: relative;
-        display: inline-block;
-        font-size: 30px;
-        background: #fff;
-        color: #000;
-        border: 1px solid #000;
-        border-radius: 50% 0 0 0;
-        padding: 20px;
-    }
-    
-    .proposito section {
-        opacity: 0;
-        height: 0px;
-        border: 1px solid #789f9a;
-        color: #789f9a;
-        transition: 0.2s;
-    }
-    
-    .proposito input[type=checkbox]:checked+label+section {
-        opacity: 1;
-        height: auto;
-        width: 40%;
-        display: inline-block;
-    }
-    /* .pronun li {
-    margin-bottom: 20px;
-    list-style: none;
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    background: #f4f4f4;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.pronun input[type=checkbox] {
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.hdrimg {
+    width: 100%;
+    height: 100vh;
     position: absolute;
-    opacity: 1;
+    background-repeat: no-repeat;
 }
 
-.pronun label {
+.navbar {
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    display: flex;
+    background: transparent;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.code {
+    position: absolute;
+    top: 25%;
+    left: 2%;
+    width: 10%;
+    height: 5vh;
+}
+
+.programa {
+    width: 20%;
+    height: 20vh;
+    top: 60%;
+    left: 5%;
+    margin: 0;
+    position: absolute;
+    background: transparent;
+}
+
+.programa p {
+    color: #000;
+    text-align: left;
+    font-size: 70px;
+    margin: 0;
+}
+
+.programa h2 {
+    color: #000;
+    text-align: center;
+    font-size: 100px;
+    margin: 0;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    list-style-type: none;
+    margin: 0 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.navbar ul li a {
+    text-decoration: none;
     position: relative;
     display: block;
-    font-size: 40px;
-    background: #f3f3f3;
-    color: #789f9a;
-    border: 1px solid #789f9a;
-    padding: 20px;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
 }
 
-.pronun section {
-    opacity: 0;
-    height: 0px;
-    border: 1px solid #789f9a;
-    color: #789f9a;
-    transition: 0.2s;
+.borde {
+    background: rgb(49, 230, 17);
+    margin: 0px;
+    padding: 15px 32px;
+    border-radius: 60% 0 60% 0;
 }
 
-.pronun input[type=checkbox]:checked+label+section {
-    opacity: 1;
+.sec2 {
+    width: 100%;
     height: auto;
-    padding: 10px 20px;
-} */
-    /* .proposito {
-    width: 20vw;
-    height: 10vh;
-    right: 100%;
+}
+
+.sec2 h1 {
+    height: 15%;
+    color: rgb(51, 137, 218);
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+}
+
+.sec2 p {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+}
+
+.imgnosotros {
+    width: 60%;
+    height: 30vh;
+    position: absolute;
+    left: 20%;
+}
+
+.pro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
     position: relative;
-    color: gray;
-    background: #f5f5f5;
-    border-radius: 50% 0 0 0;
-    font-size: 40px;
-    cursor: pointer;
+}
+
+.puntos1 {
+    width: 5vw;
+    height: 22vh;
+    margin: 0;
+    top: 25%;
+    left: 40%;
+    position: absolute;
+    border-right: 5px dashed rgb(0, 47, 255);
+    border-bottom: 5px dashed rgb(0, 47, 255);
+}
+
+.puntos2 {
+    width: 5vw;
+    height: 22vh;
+    top: 25%;
+    left: 60%;
+    position: absolute;
+    border-left: 5px dashed rgb(0, 47, 255);
+    border-bottom: 5px dashed rgb(0, 47, 255);
+}
+
+#mas {
+    width: 70px;
+    height: 70px;
+    left: -13vh;
+    position: relative;
+    color: #fff;
+    border-radius: 50%;
+    background: rgb(0, 47, 255);
+    text-align: center;
+    font-size: 60px;
+}
+
+#mas2 {
+    width: 70px;
+    height: 70px;
+    top: 75%;
+    left: 65%;
+    position: relative;
+    color: #fff;
+    border-radius: 50%;
+    background: rgb(0, 47, 255);
+    text-align: center;
+    font-size: 60px;
+}
+
+.cuadro1 {
+    position: absolute;
+}
+
+.cuadro2 {
+    position: absolute;
+    right: 35%;
+    top: 45%;
+}
+
+.cuadro1 section {
+    width: 246px;
+    opacity: 0;
+    height: 150px;
+    transition: 0.2s;
+    background: rgb(55, 55, 247);
+    color: white;
+    position: relative;
+    top: 110%;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 5px;
+}
+
+.cuadro2 section {
+    width: 280px;
+    opacity: 0;
+    height: 180px;
+    transition: 0.2s;
+    background: rgb(55, 55, 247);
+    color: white;
+    position: absolute;
+    top: 110%;
+    right: -4%;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cuadro1 section p {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    left: 6%;
+}
+
+.cuadro2 section p {
     text-align: center;
 }
 
-.pronun {
-    width: 25vw;
+.cuadro2 section h2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.cuadro1 input[type=checkbox]:checked+label+label+section {
+    opacity: 1;
+}
+
+.cuadro2 input[type=checkbox]:checked+label+label+section {
+    opacity: 1;
+    right: -450%;
+}
+
+#proposito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
     height: 10vh;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    top: 5%;
+    left: -40vh;
+    border-top-left-radius: 50px;
+    font-size: 25px;
+}
+
+#pronunciacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 10vh;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    top: 5%;
+    right: -20vw;
+    border-top-right-radius: 50px;
+    font-size: 25px;
+}
+
+.equipo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.equipo h1 {
+    height: 20%;
+    color: rgb(0, 47, 255);
+    font-size: 50px;
+}
+
+.slider {
+    width: 80%;
+    height: 60vh;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s ease-in-out infinite;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+    height: 100vh;
+}
+
+.slider .container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.slider .container>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slider .colaborador {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.colaborador img {
+    width: 38px;
+    height: 38px;
+}
+
+.colaborador1 img {
+    width: 50%;
+    height: 80%;
+}
+
+.colaborador-datos {
+    width: 70%;
+    margin: 0 0 0 5%;
+}
+
+.colaboradorC {
+    font-size: 15px;
+    font-weight: 100;
+    color: rgb(87, 82, 82);
+}
+
+.colaboradorN {
+    font-size: 18px;
+    font-weight: 100;
+    color: black;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0%;
+    }
+    20% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
+}
+
+.sec3 {
+    width: 100%;
+    height: 100vh;
     position: relative;
-    color: gray;
-    background: #000;
-    border-radius: 0 50% 0 0;
-    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sec3 .textbox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sec3 h2 {
+    color: rgb(0, 47, 255);
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+}
+
+.programas {
+    text-align: center;
+    width: 20%;
+    height: 90%;
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    position: relative;
+}
+
+.programas-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+    width: 100%;
+    padding: 20%;
+}
+
+.programas-text span {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+hr {
+    color: white;
+    width: 100%;
+}
+
+.programas .imgbx {
+    position: absolute;
+    top: -20%;
+}
+
+.programas img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.upInfo {
+    width: 100%;
+    height: 10vh;
+    background: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: relative;
     cursor: pointer;
-} */
-    
-    .equipo {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    .equipo h1 {
-        height: 20%;
-        color: rgb(0, 47, 255);
-        font-size: 50px;
-    }
-    
-    .slider {
-        width: 80%;
-        height: 60%;
-        margin: auto;
-        overflow: hidden;
-    }
-    
-    .slider ul {
-        display: flex;
-        padding: 0;
-        width: 400%;
-        animation: cambio 20s ease-in-out infinite;
-    }
-    
-    .slider li {
-        width: 100%;
-        list-style: none;
-        height: 100vh;
-    }
-    
-    .slider .container {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        /* border: 2px solid black; */
-    }
-    
-    .slider .container>div {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    .slider .colaborador {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .colaborador img {
-        width: 38px;
-        height: 38px;
-    }
-    
-    .colaborador1 img {
-        width: 50%;
-        height: 80%;
-    }
-    
-    .colaborador-datos {
-        width: 70%;
-        margin: 0 0 0 5%;
-    }
-    
-    .colaboradorC {
-        font-size: 15px;
-        font-weight: 100;
-        color: rgb(87, 82, 82);
-    }
-    
-    .colaboradorN {
-        font-size: 18px;
-        font-weight: 100;
-        color: black;
-    }
-    
-    @keyframes cambio {
-        0% {
-            margin-left: 0%;
-        }
-        20% {
-            margin-left: 0%;
-        }
-        25% {
-            margin-left: -100%;
-        }
-        45% {
-            margin-left: -100%;
-        }
-        50% {
-            margin-left: -200%;
-        }
-        70% {
-            margin-left: -200%;
-        }
-        75% {
-            margin-left: -300%;
-        }
-        100% {
-            margin-left: -300%;
-        }
-    }
-    
-    .sec4 {
-        /* position: absolute; */
-        width: 100%;
-        height: 100vh;
-        background: url('./Imagenes/aliados.jpeg');
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    
-    .sec4 h3 {
-        position: absolute;
-        color: #fff;
-        background: transparent;
-        font-size: 30px;
-        text-align: center;
-        left: 30%;
-    }
-    
-    .sof {
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        position: relative;
-        background: linear-gradient(transparent, blue, green);
-    }
-    
-    .sof span {
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        background: linear-gradient(transparent, transparent, blue, green);
-    }
-    
-    .sof::after {
-        content: '';
-        position: absolute;
-        top: 100px;
-        bottom: 100px;
-        left: 100px;
-        right: 100px;
-        background: url('./Imagenes/sof.jpeg');
-        border-radius: 50%;
-        justify-content: center;
-    }
-    
-    .sec3 {
-        width: 100%;
-        height: 100vh;
-    }
-    
-    .programas {
-        padding-top: 40px;
-        padding-bottom: 120px;
-    }
-    
-    .sec3 h2 {
-        color: rgb(0, 47, 255);
-        text-align: center;
-        margin: 0;
-    }
-    
-    .imgup {
-        width: 10%;
-        height: 10%;
-        position: absolute;
-        left: 25%;
-    }
-    
-    .imgup img {
-        border-radius: 50%;
-        justify-content: center;
-        background-repeat: no-repeat;
-    }
-    
-    .up {
-        width: 20%;
-        height: 20%;
-        background: gray;
-        top: 20vh;
-        margin: 0;
-    }
-    
-    .up h3 {
-        color: #fff;
-        text-align: center;
-        font-size: 50px;
-        margin: 0;
-    }
-    
-    .up p {
-        color: #fff;
-        text-align: center;
-        font-size: 30px;
-    }
-    
-    .upInfo {
-        width: 30%;
-        height: 10vh;
-        background: #fff;
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
-        position: relative;
-        cursor: pointer;
-        font-size: 20px;
-        margin-left: 15%;
-        text-align: center;
-    }
-    
-    .testimonios {
-        margin: 5% 0;
-    }
-    
-    .testimonio {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .testimonio div {
-        width: 80%;
-        text-align: center;
-    }
-    
-    .testimonio div p {
-        text-align: justify;
-    }
-    
-    .testimonio div .nombre {
-        text-align: center;
-        font-size: 20px;
-    }
-    
-    .colabora {
-        height: 80vh;
-    }
-    
-    .colabora>div {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        color: white;
-        width: 75%;
-        margin: auto;
-    }
-    
-    .inclusion {
-        text-align: center;
-        position: relative;
-        width: 20%;
-        height: 40vh;
-        background: #0264FB;
-        border-radius: 5%;
-        display: flex;
-        justify-content: center;
-        top: 50px;
-    }
-    
-    .inclusion-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 90%;
-        margin: 10%;
-    }
-    
-    .inclusion-text span {
-        text-transform: uppercase;
-        font-size: 20px;
-    }
-    
-    hr {
-        color: white;
-        width: 100%;
-    }
-    
-    .inclusion-img {
-        position: absolute;
-        margin-top: -5vh;
-    }
-    
-    .inclusion img {
-        width: 80px;
-        border-radius: 50%;
-        text-align: center;
-    }
-    
-    .dudas {
-        width: 100%;
-        height: 100vh;
-        background: url('./Imagenes/IMG-gris.jpg');
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    .dudas>div {
-        width: 50%;
-        height: 30vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    
-    .dudas>div div {
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    .pregunta {
-        font-size: 25px;
-    }
-    
-    .correo {
-        max-width: 100%;
-        height: 30%;
-        font-size: 35px;
-        background: burlywood;
-        color: rgb(51, 137, 218);
-        border-radius: 75px 0 75px 0;
-        font-weight: bolder;
-    }
-    
-    .dudas footer {
-        width: 75%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .dudas footer .fab {
-        color: white;
-        font-size: 35px;
-    }
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    bottom: -20%;
+}
+
+.startInfo {
+    width: 100%;
+    height: 10vh;
+    background: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    bottom: -20%;
+}
+
+.sec4 {
+    background: url('./Imagenes/aliados.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60em;
+    padding: 24px 0px;
+}
+
+.sec4 h2 {
+    padding: 0;
+    font-size: 80px;
+    text-align: center;
+    color: #fff;
+}
+
+.images {
+    align-items: center;
+    position: relative;
+    height: 80%;
+}
+
+.fondoBlan {
+    border: 10px solid #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.tamanio1 {
+    width: 15em;
+    height: 15em;
+    top: 2%;
+    left: 20%;
+    position: absolute;
+}
+
+.tamanio2 {
+    width: 10em;
+    height: 10em;
+    left: 37%;
+    top: 35%;
+    position: absolute;
+}
+
+.tamanio3 {
+    width: 8em;
+    height: 8em;
+    left: 50%;
+    top: 20%;
+    position: absolute;
+}
+
+.tamanio4 {
+    width: 12em;
+    height: 12em;
+    left: 63%;
+    top: 26%;
+    position: absolute;
+}
+
+.colorTrans1,
+.colorTrans2,
+.colorTrans3,
+.colorTrans4 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, green, transparent, green, blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images>div>div>div img {
+    width: 70%;
+    height: 70%;
+}
+
+.sof {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+    background: linear-gradient(transparent, blue, green);
+}
+
+.sof span {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(transparent, transparent, blue, green);
+}
+
+.sof::after {
+    content: '';
+    position: absolute;
+    top: 100px;
+    bottom: 100px;
+    left: 100px;
+    right: 100px;
+    background: url('./Imagenes/sof.jpeg');
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.testimonios {
+    margin: 5% 0;
+}
+
+.testimonio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonio div {
+    width: 80%;
+    text-align: center;
+}
+
+.testimonio div p {
+    text-align: justify;
+}
+
+.testimonio div .nombre {
+    text-align: center;
+    font-size: 20px;
+}
+
+.colabora {
+    height: 80vh;
+}
+
+.colabora>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    width: 75%;
+    margin: auto;
+}
+
+.inclusion {
+    text-align: center;
+    position: relative;
+    width: 20%;
+    height: 40vh;
+    background: #0264FB;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    top: 50px;
+}
+
+.inclusion-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    margin: 10%;
+}
+
+.inclusion-text span {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+hr {
+    color: white;
+    width: 100%;
+}
+
+.inclusion-img {
+    position: absolute;
+    margin-top: -5vh;
+}
+
+.inclusion img {
+    width: 80px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.dudas {
+    width: 100%;
+    height: 100vh;
+    background: url('./Imagenes/IMG-gris.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dudas>div {
+    width: 50%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dudas>div div {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pregunta {
+    font-size: 25px;
+}
+
+.correo {
+    max-width: 100%;
+    height: 30%;
+    font-size: 35px;
+    background: burlywood;
+    color: rgb(51, 137, 218);
+    border-radius: 75px 0 75px 0;
+    font-weight: bolder;
+}
+
+.dudas footer {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dudas footer .fab {
+    color: white;
+    font-size: 35px;
+}
