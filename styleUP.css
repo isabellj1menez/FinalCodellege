@@ -306,6 +306,73 @@ h1 {
     font-size: 50px;
 }
 
+.temas {
+    width: 90%;
+    margin: 2% auto;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+}
+
+.temas h2 {
+    color: rgb(28, 48, 224);
+    font-size: 30px;
+}
+
+.slider {
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 200%;
+    height: 100%;
+    animation: cambio 20s infinite;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider .contenedor {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-around;
+}
+
+.slider .contenedor .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-around;
+}
+
+.slider .contenedor .row div {
+    width: 20%;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0%;
+    }
+    50% {
+        margin-left: -100%;
+    }
+    100% {
+        margin-left: -100%;
+    }
+}
+
 .ubicacion h1 {
     width: 100%;
     text-align: center;
