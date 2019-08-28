@@ -121,9 +121,10 @@ body {
 }
 
 .pro {
-    position: relative;
     width: 100%;
     height: 100vh;
+    display: flex;
+    position: relative;
 }
 
 .puntos1 {
@@ -132,7 +133,7 @@ body {
     margin: 0;
     top: 25%;
     left: 40%;
-    position: relative;
+    position: absolute;
     border-right: 5px dashed rgb(0, 47, 255);
     border-bottom: 5px dashed rgb(0, 47, 255);
 }
@@ -140,9 +141,9 @@ body {
 .puntos2 {
     width: 5vw;
     height: 22vh;
-    top: 2%;
+    top: 25%;
     left: 60%;
-    position: relative;
+    position: absolute;
     border-left: 5px dashed rgb(0, 47, 255);
     border-bottom: 5px dashed rgb(0, 47, 255);
 }
@@ -150,8 +151,7 @@ body {
 #mas {
     width: 70px;
     height: 70px;
-    top: 75%;
-    right: 100%;
+    left: -13vh;
     position: relative;
     color: #fff;
     border-radius: 50%;
@@ -164,7 +164,7 @@ body {
     width: 70px;
     height: 70px;
     top: 75%;
-    left: 100%;
+    left: 65%;
     position: relative;
     color: #fff;
     border-radius: 50%;
@@ -173,22 +173,30 @@ body {
     font-size: 60px;
 }
 
-.cuadradito1 section {
+.cuadro1 {
+    position: absolute;
+}
+
+.cuadro2 {
+    position: absolute;
+    right: 35%;
+    top: 45%;
+}
+
+.cuadro1 section {
     width: 246px;
     opacity: 0;
     height: 150px;
     transition: 0.2s;
     background: rgb(55, 55, 247);
     color: white;
-    position: absolute;
+    position: relative;
     top: 110%;
-    left: -4%;
-    z-index: -3;
     border-bottom-right-radius: 50px;
     border-top-right-radius: 5px;
 }
 
-.cuadradito2 section {
+.cuadro2 section {
     width: 280px;
     opacity: 0;
     height: 180px;
@@ -198,7 +206,6 @@ body {
     position: absolute;
     top: 110%;
     right: -4%;
-    z-index: -3;
     border-bottom-left-radius: 50px;
     border-top-left-radius: 5px;
     display: flex;
@@ -208,7 +215,7 @@ body {
     flex-direction: column;
 }
 
-.cuadradito1 section p {
+.cuadro1 section p {
     width: 80%;
     text-align: center;
     margin: auto;
@@ -217,36 +224,35 @@ body {
     left: 6%;
 }
 
-.cuadradito2 section p {
+.cuadro2 section p {
     text-align: center;
 }
 
-.cuadradito2 section h1 {
+.cuadro2 section h2 {
     text-align: center;
     font-size: 25px;
 }
 
-.cuadradito1 input[type=checkbox]:checked+label+label+section {
+.cuadro1 input[type=checkbox]:checked+label+label+section {
     opacity: 1;
-    /* height: auto; */
 }
 
-.cuadradito2 input[type=checkbox]:checked+label+label+section {
+.cuadro2 input[type=checkbox]:checked+label+label+section {
     opacity: 1;
-    /* height: auto; */
+    right: -450%;
 }
 
 #proposito {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 220px;
-    height: 55px;
-    background: #000;
+    width: 60%;
+    height: 10vh;
+    background: rgb(236, 236, 236);
     position: absolute;
-    top: 85%;
+    top: 5%;
+    left: -40vh;
     border-top-left-radius: 50px;
-    font-family: 'Montserrat', sans-serif;
     font-size: 25px;
 }
 
@@ -254,14 +260,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 55px;
+    width: 15vw;
+    height: 10vh;
     background: rgb(236, 236, 236);
     position: absolute;
-    top: 85%;
-    right: -5%;
+    top: 5%;
+    right: -20vw;
     border-top-right-radius: 50px;
-    font-family: 'Montserrat', sans-serif;
     font-size: 25px;
 }
 
@@ -304,7 +309,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* border: 2px solid black; */
 }
 
 .slider .container>div {
